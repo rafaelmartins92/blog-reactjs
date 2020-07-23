@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Rafael Martins - Blog`,
-    position: `Front-end developer`,
+    position: `Front-end Developer`,
     description: `Just a curious Dev sharing what he learned.`,
     author: `@rafaelmartins`,
   },
@@ -13,6 +13,19 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [],
       },
     },
     `gatsby-transformer-sharp`,

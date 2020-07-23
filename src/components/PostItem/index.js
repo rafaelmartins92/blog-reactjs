@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import * as S from "./styled"
-import { SignLanguage } from "styled-icons/fa-solid"
 
 const PostItem = ({
   slug,
